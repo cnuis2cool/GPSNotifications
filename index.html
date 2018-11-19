@@ -70,12 +70,14 @@
            'dialog.button.foreground': 'white'
          },
         /* HIDE SUBSCRIPTION BELL WHEN USER SUBSCRIBED */
-        displayPredicate: function() {
+		/*
+		displayPredicate: function() {
             return OneSignal.isPushNotificationsEnabled()
                 .then(function(isPushEnabled) {
                     return !isPushEnabled;
                 });
-        }
+		}
+		*/
       },
       welcomeNotification: {
         "title": "GPS Notifications",
