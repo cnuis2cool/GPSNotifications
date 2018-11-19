@@ -18,8 +18,8 @@
 	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
-	<link rel="stylesheet" href="css/themes/white-grey.css">
+	<link rel="stylesheet" href="css/themes/white-blue.css">
+	<!-- <link rel="stylesheet" href="css/themes/white-grey.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
 
@@ -35,11 +35,11 @@
       /* SUBSCRIPTION BELL CUSTOMIZATIONS START HERE */
         size: 'medium', /* One of 'small', 'medium', or 'large' */
         theme: 'default', /* One of 'default' (red-white) or 'inverse" (white-red) */
-        position: 'bottom-right', /* Either 'bottom-left' or 'bottom-right' */
+        position: 'bottom-left', /* Either 'bottom-left' or 'bottom-right' */
         offset: {
-            bottom: '0px',
-            left: '0px', /* Only applied if bottom-left */
-            right: '0px' /* Only applied if bottom-right */
+            bottom: '5px',
+            left: '5px', /* Only applied if bottom-left */
+            right: '5px' /* Only applied if bottom-right */
         },
         prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
         showCredit: false, /* Hide the OneSignal logo */
@@ -57,7 +57,8 @@
             'dialog.blocked.title': 'Unblock Notifications',
             'dialog.blocked.message': "Follow these instructions to allow notifications:"
         },
-        colors: { // Customize the colors of the main button and dialog popup button
+		/*
+		colors: { // Customize the colors of the main button and dialog popup button
            'circle.background': 'rgb(84,110,123)',
            'circle.foreground': 'white',
            'badge.background': 'rgb(84,110,123)',
@@ -68,7 +69,8 @@
            'dialog.button.background.active': 'rgb(70, 92, 103)',
            'dialog.button.background': 'rgb(84,110,123)',
            'dialog.button.foreground': 'white'
-         },
+		 },
+		 */
         /* HIDE SUBSCRIPTION BELL WHEN USER SUBSCRIBED */
 		/*
 		displayPredicate: function() {
@@ -93,9 +95,11 @@
         cancelButtonText: "NO THANKS"
       }
     }]);
-    OneSignal.push(function() {
+	/*
+	OneSignal.push(function() {
       OneSignal.showHttpPrompt();
-    });
+	});
+	*/
 	</script>
 </head>
 <body>
