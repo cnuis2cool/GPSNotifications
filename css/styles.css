@@ -63,6 +63,13 @@ main > .tagline2 {
 	color: #FAFAFA;
 }
 
+main > .tagline3 {
+	font-size: 1.2rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+	color: #AF3D4E;
+}
+
 .icons-social i {
 	padding: 10px;
 }
